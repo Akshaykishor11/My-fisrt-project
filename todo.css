@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1c9ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.task-manager {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgb(255, 216, 234);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#taskInput, #priorityInput, #dateInput {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addButton {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(174, 53, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#addButton:hover {
+    background-color: rgb(122, 136, 255);
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-content input[type="text"] {
+    border: none;
+    background: none;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.task-content input[type="date"] {
+    border: none;
+    background: none;
+    font-size: 0.8em;
+    color: grey;
+}
+
+.priority-low {
+    color: rgb(0, 148, 0);
+}
+
+.priority-medium {
+    color: rgb(219, 143, 0);
+}
+
+.priority-high {
+    color: rgb(218, 1, 1);
+}
+
+.deleteButton, .editButton {
+    background-color: rgb(255, 42, 42);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.editButton {
+    background-color: rgb(57, 57, 255);
+}
+
+.completed .task-content input[type="text"] {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.done {
+    display: flex;
+    align-items: center;
+}
+
+.done input[type="checkbox"] {
+    margin-right: 5px;
+}

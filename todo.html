@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="task-manager">
+        <h2>Task Manager</h2>
+        <input type="text" id="taskInput" placeholder="ADD TASK">
+        <select id="priorityInput">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <input type="date" id="dateInput">
+        <button id="addButton">ADD</button>
+        <ul id="taskList">
+            <!-- Task items will be added here -->
+        </ul>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
